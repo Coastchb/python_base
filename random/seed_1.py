@@ -5,7 +5,7 @@
 import tensorflow as tf
 
 a = tf.random_uniform([1], seed=1)
-b = tf.random_normal([1])
+b = tf.random_uniform([1])
 
 # Repeatedly running this block with the same graph will generate the same
 # sequence of values for 'a', but different sequences of values for 'b'.
