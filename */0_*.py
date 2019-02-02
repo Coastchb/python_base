@@ -29,6 +29,7 @@ def main():
     print('single star:')
     single_star('a','b','c')
     #single_star()  # OK
+    single_star(('a','b','c'))
     print('\n')
 
     print('double star:')
