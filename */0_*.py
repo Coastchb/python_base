@@ -25,6 +25,22 @@ def mixed_star(arg0=0,*arg1,**arg2):
     print(arg1)
     print(arg2)
 
+def sub_fun(arg0, arg1, arg2, e="None", f="None"):
+    print('in subfun:')
+    print(arg0)
+    print(arg1)
+    print(arg2)
+    print(e)
+    print(f)
+
+def mixed_star2(*arg1, **arg2):
+    print(arg1)
+    print(arg2)
+    print(*arg1)
+    print(*arg2)
+    sub_fun(*arg1, **arg2)
+
+
 def main():
     print('single star:')
     single_star('a','b','c')
@@ -56,5 +72,9 @@ def main():
     #print(**dict)      # Error
     double_star(**dict)
     #double_star(dict)  # Error
+    print('\n')
+
+    print('in mixed_star2:')
+    mixed_star2("a", ("b", "c"), "d", e="e",f="f")
 
 main()
