@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../crf_POS/.idea/crf_POS.iml" filepath="$PROJECT_DIR$/../crf_POS/.idea/crf_POS.iml" />
+      <module fileurl="file://$USER_HOME$/kaldi-master/.idea/kaldi-master.iml" filepath="$USER_HOME$/kaldi-master/.idea/kaldi-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../opgru/.idea/opgru.iml" filepath="$PROJECT_DIR$/../opgru/.idea/opgru.iml" />
+      <module fileurl="file://$USER_HOME$/temp/perl/.idea/perl.iml" filepath="$USER_HOME$/temp/perl/.idea/perl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python_base.iml" filepath="$PROJECT_DIR$/.idea/python_base.iml" />
+      <module fileurl="file://$USER_HOME$/tensorflow/.idea/tensorflow.iml" filepath="$USER_HOME$/tensorflow/.idea/tensorflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tf/.idea/tf.iml" filepath="$PROJECT_DIR$/../tf/.idea/tf.iml" />
+    </modules>
+  </component>
+</project>

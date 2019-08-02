@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1674b68f-f6c1-4d66-af57-ab6e28b3fe42" name="asr" url="http://ar">
+        <fileTransfer host="ar" port="22" rootFolder="/export/expts5/hbcao" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="3329f7c0-1825-42f9-806e-3fe9771960a2" name="kaldi" url="http://maryland">
+        <fileTransfer host="maryland" port="22" rootFolder="/export/maryland/hbcao/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="1b9d96eb-5cac-410e-a655-1c1dfa84285b" name="share-nfs-1" url="http://ar">
+        <fileTransfer host="ar" port="22" rootFolder="/export/share-nfs-1/hbcao" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
