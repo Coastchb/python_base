@@ -1,17 +1,35 @@
+# coding=utf-8
 import numpy as np
 import matplotlib.pyplot as plt
+import chardet
+
+
+# coding=utf-8
+def check_charset(file_path):
+    import chardet
+    with open(file_path, "rb") as f:
+        data = f.read(4)
+        charset = chardet.detect(data)['encoding']
+        print('charset:{0}'.format(charset))
+    return charset
+
+
+scores = []
+
+count = 0
+for line in open('scores', encoding=check_charset('scores')).readlines():
+    scores.append(eval(line.strip())[0][0][0][10:])
+
+    count += 1
+    if count >= 2000:
+        break
 
 # Fixing random state for reproducibility
 np.random.seed(19680801)
 
 fig, ax = plt.subplots()
 
-image = np.random.uniform(size=(10, 10))
-image = [[0.7, 0.2, 0.00001, 0.000006, 0.0002],
-         [0.1, 0.8, 0.05, 0.00003, 0.0006],
-         [0.1, 0.2, 0.5, 0.1, 0.03],
-         [0.06, 0.1, 0.2, 0.6, 0.2],
-         [0.002, 0.001, 0.3, 0.1, 0.6]]
+image = np.mean(scores, axis=0)
 image = np.array(image, dtype=np.float32)
 im = ax.imshow(image, cmap=plt.cm.gray.reversed())
 ax.set_title('MTA weight matrix')

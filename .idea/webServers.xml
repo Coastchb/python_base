@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fe506e5d-f42e-4be8-93f4-dcf418a60f90" name="H52">
+        <fileTransfer rootFolder="/data/coastcao" accessType="SFTP" host="9.134.55.52" port="36000" sshConfigId="dceb668f-4be4-4e2d-b717-4c2a08dedb10" sshConfig="root@9.134.55.52:36000 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
